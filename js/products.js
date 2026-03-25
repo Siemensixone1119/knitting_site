@@ -4,7 +4,7 @@ const productsData = [
     title: "Вязаный шарф",
     category: "Аксессуары",
     price: 1500,
-    image: "../image/image1.jpg",
+    image: "image/image1.jpg",
     popular: true,
     description: "Мягкий тёплый шарф крупной вязки. Подходит для осени и зимы, хорошо сохраняет тепло и красиво смотрится в повседневном образе."
   },
@@ -13,7 +13,7 @@ const productsData = [
     title: "Вязаная шапка",
     category: "Аксессуары",
     price: 1200,
-    image: "../image/image1.jpg",
+    image: "./image/image1.jpg",
     popular: true,
     description: "Уютная шапка ручной работы из мягкой пряжи. Можно обсудить цвет и размер для индивидуального заказа."
   },
