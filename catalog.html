@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог — Тёплые Петли</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Тёплые Петли</a>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link nav__link--active" href="catalog.html">Каталог</a>
+        <a class="nav__link" href="cart.html">Корзина</a>
+        <a class="nav__link" href="contacts.html">Контакты</a>
+        <a class="nav__link" href="checkout.html">Оформление заказа</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="cart.html" class="header__cart-btn">
+          <span class="header__cart-label">Корзина</span>
+          <span class="cart-badge" id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section catalog-page">
+      <div class="container">
+        <div class="section__head">
+          <h1 class="section__title">Каталог изделий</h1>
+          <p class="section__text">
+            На этой странице собраны все товары. Используйте фильтры, чтобы быстро
+            найти аксессуары, игрушки или изделия для дома.
+          </p>
+        </div>
+
+        <div class="filters" id="catalog-filters">
+          <button class="filter-btn filter-btn--active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="Аксессуары">Аксессуары</button>
+          <button class="filter-btn" data-filter="Игрушки">Игрушки</button>
+          <button class="filter-btn" data-filter="Для дома">Для дома</button>
+        </div>
+
+        <div class="products" id="catalog-products"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Тёплые Петли — вязаные изделия ручной работы</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

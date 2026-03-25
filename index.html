@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тёплые Петли — вязаные изделия ручной работы</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">Тёплые Петли</a>
+
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
+
+      <nav class="nav">
+        <a class="nav__link nav__link--active" href="index.html">Главная</a>
+        <a class="nav__link" href="catalog.html">Каталог</a>
+        <a class="nav__link" href="cart.html">Корзина</a>
+        <a class="nav__link" href="contacts.html">Контакты</a>
+        <a class="nav__link" href="checkout.html">Оформление заказа</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="cart.html" class="header__cart-btn">
+          <span class="header__cart-label">Корзина</span>
+          <span class="cart-badge" id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="hero__label">Ручная работа с душой</span>
+          <h1 class="hero__title">Вязаные изделия для дома, тепла и подарков</h1>
+          <p class="hero__text">
+            Уютный сайт бабушки-мастерицы, где можно посмотреть популярные изделия,
+            перейти в полный каталог, добавить товар в корзину и оформить заказ.
+          </p>
+          <div class="hero__actions">
+            <a href="catalog.html" class="button">Перейти в каталог</a>
+            <a href="contacts.html" class="button button--light">Связаться</a>
+          </div>
+        </div>
+
+        <div class="image-placeholder image-placeholder--large set-bg" data-setbg="./image/hero.avif">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">О мастерице</h2>
+          <p class="section__text">
+            Каждое изделие создаётся вручную, с вниманием к деталям, подбором
+            пряжи и аккуратным оформлением. Можно выбрать готовую работу или
+            заказать изделие по вашим пожеланиям.
+          </p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3 class="info-card__title">Ручная работа</h3>
+            <p class="info-card__text">
+              Все изделия связаны вручную и отличаются аккуратностью исполнения.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3 class="info-card__title">Уютный стиль</h3>
+            <p class="info-card__text">
+              Тёплые вещи для дома, прогулок, подарков и повседневного использования.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3 class="info-card__title">Индивидуальный заказ</h3>
+            <p class="info-card__text">
+              Можно обсудить размер, цвет пряжи, узор и особенности изделия.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <h2 class="section__title">Популярные изделия</h2>
+            <p class="section__text">
+              На главной странице показаны только самые популярные товары.
+            </p>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__btn" type="button" data-slider-prev="popular-slider" aria-label="Предыдущий слайд">←</button>
+            <button class="slider__btn" type="button" data-slider-next="popular-slider" aria-label="Следующий слайд">→</button>
+            <a href="catalog.html" class="button button--light">Все товары</a>
+          </div>
+        </div>
+
+        <div class="slider" id="popular-slider">
+          <div class="slider__viewport">
+            <div class="slider__track" id="popular-products"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <h2 class="section__title">Отзывы</h2>
+            <p class="section__text">Несколько тёплых слов от покупателей.</p>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__btn" type="button" data-slider-prev="reviews-slider" aria-label="Предыдущий отзыв">←</button>
+            <button class="slider__btn" type="button" data-slider-next="reviews-slider" aria-label="Следующий отзыв">→</button>
+          </div>
+        </div>
+
+        <div class="slider" id="reviews-slider">
+
+  <div class="slider__viewport">
+    <div class="slider__track" id="reviews-list"></div>
+  </div>
+
+</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Тёплые Петли — вязаные изделия ручной работы</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+</html>
