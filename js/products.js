@@ -4,7 +4,7 @@ const productsData = [
     title: "Вязаный шарф",
     category: "Аксессуары",
     price: 1500,
-    image: "image/image1.jpg",
+    image: "./image/image1.jpg",
     popular: true,
     description: "Мягкий тёплый шарф крупной вязки. Подходит для осени и зимы, хорошо сохраняет тепло и красиво смотрится в повседневном образе."
   },
@@ -22,7 +22,7 @@ const productsData = [
     title: "Вязаный снуд",
     category: "Аксессуары",
     price: 1400,
-    image: "../image/image1.jpg",
+    image: "./image/image1.jpg",
     popular: false,
     description: "Практичный снуд для прохладной погоды. Хорошо сочетается с пальто и куртками, выглядит аккуратно и современно."
   },
@@ -31,7 +31,7 @@ const productsData = [
     title: "Вязаные носки",
     category: "Аксессуары",
     price: 900,
-    image: "../image/image1.jpg",
+    image: "./image/image1.jpg",
     popular: false,
     description: "Тёплые носки ручной работы для дома и зимних вечеров. Возможен выбор цвета пряжи."
   },
@@ -40,7 +40,7 @@ const productsData = [
     title: "Вязаная игрушка-зайка",
     category: "Игрушки",
     price: 1800,
-    image: "../image/image1.jpg",
+    image: "./image/image1.jpg",
     popular: true,
     description: "Мягкая игрушка ручной работы для подарка или детской комнаты. Смотрится мило и уютно."
   },
@@ -49,7 +49,7 @@ const productsData = [
     title: "Вязаный мишка",
     category: "Игрушки",
     price: 1900,
-    image: "../image/image1.jpg",
+    image: "./image/image1.jpg",
     popular: false,
     description: "Игрушка ручной работы с аккуратной вязкой и приятной фактурой. Подходит для подарка ребёнку или на память."
   },
@@ -58,7 +58,7 @@ const productsData = [
     title: "Вязаный плед",
     category: "Для дома",
     price: 3500,
-    image: "../image/image1.jpg",
+    image: "./image/image1.jpg",
     popular: true,
     description: "Красивый вязаный плед для дома. Создаёт уют, украшает интерьер и отлично подходит для отдыха."
   },
@@ -67,7 +67,7 @@ const productsData = [
     title: "Декоративная наволочка",
     category: "Для дома",
     price: 1600,
-    image: "../image/image1.jpg",
+    image: "./image/image1.jpg",
     popular: false,
     description: "Вязаная декоративная наволочка для подушки. Хорошо дополняет интерьер и делает комнату уютнее."
   }
